@@ -30,23 +30,25 @@ import { PlayerComponent } from './rooms/player/player.component';
 import { TrafficComponent } from './traffic/traffic.component';
 import { TrafficChartComponent } from './traffic/traffic-chart.component';
 import { FormsModule } from '@angular/forms';
+import {ChartsModule} from "../charts/charts.module";
 
 @NgModule({
-  imports: [
-    FormsModule,
-    ThemeModule,
-    NbCardModule,
-    NbUserModule,
-    NbButtonModule,
-    NbTabsetModule,
-    NbActionsModule,
-    NbRadioModule,
-    NbSelectModule,
-    NbListModule,
-    NbIconModule,
-    NbButtonModule,
-    NgxEchartsModule,
-  ],
+    imports: [
+        FormsModule,
+        ThemeModule,
+        NbCardModule,
+        NbUserModule,
+        NbButtonModule,
+        NbTabsetModule,
+        NbActionsModule,
+        NbRadioModule,
+        NbSelectModule,
+        NbListModule,
+        NbIconModule,
+        NbButtonModule,
+        NgxEchartsModule,
+        ChartsModule,
+    ],
   declarations: [
     DashboardComponent,
     StatusCardComponent,
