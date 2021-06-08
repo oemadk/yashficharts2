@@ -12,7 +12,8 @@ const routes: Routes = [{
   children: [
     {
       path: 'dashboard',
-      component: ECommerceComponent,
+      loadChildren: () => import('./charts/charts.module')
+        .then(m => m.ChartsModule),
     },
     {
       path: 'iot-dashboard',
