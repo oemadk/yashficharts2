@@ -60,7 +60,7 @@ const components = [
   ],
   declarations: [...routedComponents, ...components],
   exports: [
-    EchartsPieComponent
-  ]
+    EchartsPieComponent,
+  ],
 })
 export class ChartsModule {}
